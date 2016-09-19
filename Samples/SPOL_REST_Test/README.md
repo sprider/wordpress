@@ -32,6 +32,9 @@ Version|Date|Comments
 - clone this repo
 - open the solution in Visual Studio 
 - update the App.config file as per your environment 
-- press F5 is visual studio to run/debug
+- press F5 in visual studio to run/debug
+- [Similar concept with google postman](https://blog.sprider.org/2016/09/15/access-sharepoint-online-rest-api-via-google-postman-with-user-context/)
+
+
 
 
