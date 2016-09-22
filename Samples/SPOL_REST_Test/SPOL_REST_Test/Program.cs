@@ -12,7 +12,7 @@ namespace SPOL_REST_Test
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex.Message); 
+                Console.WriteLine(ex.Message);
             }
 
             Console.Read();
