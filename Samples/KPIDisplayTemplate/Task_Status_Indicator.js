@@ -5,20 +5,23 @@ window.KPIList.Overrides = {
         return "<div id='CustomViewHeader' class='container-fluid'><center><p>Report as on today</p></center><table class='table'><thead><tr><th>Title</th><th>Status</th></tr></thead><tbody>";
     },
     customItemHtml: function (ctx) {
+
+        var dispFormURL = "/sites/dev/Lists/KPI%20Report/DispForm.aspx?ID="+ ctx.CurrentItem.ID;
+
         if (ctx.CurrentItem.Status == 'Success') {
-            return '<tr class="active"><td>' + '<a href="' + ctx.CurrentItem.URL + '">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Green.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
+            return '<tr class="active"><td>' + '<a target="_blank" href="'+dispFormURL+'">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Green.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
         }
 
         if (ctx.CurrentItem.Status == 'Info') {
-            return '<tr class="active"><td>' + '<a href="' + ctx.CurrentItem.URL + '">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Blue.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
+            return '<tr class="active"><td>' + '<a target="_blank" href="'+dispFormURL+'">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Blue.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
         }
 
         if (ctx.CurrentItem.Status == 'Warning') {
-            return '<tr class="active"><td>' + '<a href="' + ctx.CurrentItem.URL + '">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Yellow.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
+            return '<tr class="active"><td>' + '<a target="_blank" href="'+dispFormURL+'">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Yellow.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
         }
 
         if (ctx.CurrentItem.Status == 'Danger') {
-            return '<tr class="active"><td>' + '<a href="' + ctx.CurrentItem.URL + '">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Red.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
+            return '<tr class="active"><td>' + '<a target="_blank" href="'+dispFormURL+'">' + ctx.CurrentItem.Title + '</a>' + '</td><td>' + '<img src="/sites/dev/SiteAssets/Circle_Red.png" alt="' + ctx.CurrentItem.Status + '"/></td></tr>';
         }
     },
     pagingControl: function (ctx) {
