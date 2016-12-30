@@ -31,8 +31,8 @@ window.KPIList.Overrides = {
         var prev = ctx.ListData.PrevHref;
         var next = ctx.ListData.NextHref;
         html += "<nav class='container-fluid'><ul class='pagination'>";
-        html += prev ?"<li class='page-item'><a class='page-link' aria-label='Previous' href='javascript:void(0)' onclick='RefreshPageTo(event, &quot;" + prev + "&quot;); return false;'><span aria-hidden='true'>&laquo;</span><span class='sr-only'>Previous</span></a></li>": "";       
-        html +=  next ? "<li class='page-item'><a class='page-link' aria-label='Next' href='javascript:void(0)' onclick='RefreshPageTo(event, &quot;" + next + "&quot;); return false;'><span aria-hidden='true'>&raquo;</span><span class='sr-only'>Next</span></a></li>" : "";
+        html += prev ?"<li class='page-item'><a class='page-link' aria-label='Previous' href='javascript:void(0)' onclick='RefreshPageTo(event, &quot;" + prev + "&quot;); return false;'><img src='/sites/dev/SiteAssets/Previous.png' alt='Previous' /></a></li>": "";       
+        html +=  next ? "<li class='page-item'><a class='page-link' aria-label='Next' href='javascript:void(0)' onclick='RefreshPageTo(event, &quot;" + next + "&quot;); return false;'><img src='/sites/dev/SiteAssets/Next.png' alt='Next' /></a></li>" : "";
         html += "</ul></nav></div>";       
         return html;
     }
