@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "angular-web-tree-client-side-solution",
+    "id": "3aac832c-f21a-4077-898f-e02dfa3987e0",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "solution/angular-web-tree.spapp"
+  }
+}
