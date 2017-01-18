@@ -1,0 +1,21 @@
+{
+  "$schema": "../../../node_modules/@microsoft/sp-module-interfaces/lib/manifestSchemas/jsonSchemas/clientSideComponentManifestSchema.json",
+
+  "id": "4a5dcbfa-43ad-49b5-a2ca-0a545bbc452f",
+  "componentType": "WebPart",
+  "version": "0.0.1",
+  "manifestVersion": 2,
+
+  "preconfiguredEntries": [{
+    "groupId": "4a5dcbfa-43ad-49b5-a2ca-0a545bbc452f",
+    "group": { "default": "Under Development" },
+    "title": { "default": "Message Center" },
+    "description": { "default": "Message center is to improve communications on high impact changes that required intervention." },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "listapi": "/_api/web/lists/",
+      "listname": "Message Center",
+      "selectedfields": "*"
+    }
+  }]
+}

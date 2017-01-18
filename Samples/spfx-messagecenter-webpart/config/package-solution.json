@@ -1,0 +1,10 @@
+{
+  "solution": {
+    "name": "spfx-messagecenter-webpart-client-side-solution",
+    "id": "61c64c82-2217-46b9-9120-1db63c25faa4",
+    "version": "1.0.0.0"
+  },
+  "paths": {
+    "zippedPackage": "spfx-messagecenter-webpart.spapp"
+  }
+}
