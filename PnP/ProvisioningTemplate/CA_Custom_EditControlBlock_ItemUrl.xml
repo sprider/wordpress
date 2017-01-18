@@ -1,7 +1,0 @@
-<pnp:ProvisioningTemplate ID="EditControlBlock" Version="1" xmlns:pnp="http://schemas.dev.office.com/PnP/2015/12/ProvisioningSchema">
-  <pnp:CustomActions>
-    <pnp:SiteCustomActions>
-      <pnp:CustomAction Name="CA_Custom_EditControlBlock_ItemUrl" Description="Url of the current item" Location="EditControlBlock" RegistrationType="List" RegistrationId="101" Title="Item Url" Sequence="3000" Url="https://xyz.azurewebsites.net/index.html?ItemUrl={ItemUrl}&amp;ItemId={ItemId}&amp;ListId={ListId}&amp;SiteUrl={SiteUrl}" Enabled="true"/>      
-    </pnp:SiteCustomActions>
-  </pnp:CustomActions>          
-</pnp:ProvisioningTemplate>
